@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="main-1">
-</head>
-<body>
-	<!DOCTYPE html>
-<html>
-<head>
 	<title> Студия nerds</title>
 	<link rel="stylesheet" href="style/main-1.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -34,23 +26,131 @@
 			<h1>Добро пожаловать в магазин готовых макетов</h1>
 		</div>
 	</header>
+    <main class="container">
+        <div class="catalog clearfix">
+            <aside class="left-column">
+                <form action="#" method="post">
+                    <div class="catalog-filter-price">
+                        <h3 class="filter-title">Стоимость</h3>
+                        <div class="catalog-aside-range"></div>
+                    </div>
+                    <div class="catalog-filter-grid">
+                        <h3 class="filter-title">Сетка:</h3>
+                        <input type="radio" id="adaptive" name="grid" value="adaptive" checked>
+                        <label for="adaptive">Адаптивная</label>
+                        <input type="radio" id="rubber" name="grid" value="rubber">
+                        <label for="rubber">Резиновая</label>
+                        <input type="radio" id="fixed" name="grid" value="fixed" disabled>
+                        <label for="fixed">Фиксированная</label>
+                    </div>
+                    <div class="catalog-filter-type">
+                        <h3 class="filter-title">Особенности:</h3>
+                        <input type="checkbox" id="slider" name="slider" value="advantages" checked>
+                        <label for="slider">Слайдер</label>
+                        <input type="checkbox" id="advantages" name="advantages" value="advantages">
+                        <label for="advantages">Блок преимуществ</label>
+                        <input type="checkbox" id="news" name="news" value="news" checked>
+                        <label for="news">Новости</label>
+                        <input type="checkbox" id="gallery" name="gallery" value="gallery">
+                        <label for="gallery">Галерея</label>
+                        <input type="checkbox" id="basket" name="basket" value="basket" disabled>
+                        <label for="basket">Корзина</label>
+                    </div>   
+                    <button type="submit" class="btn filter-btn">Показать</button>
+                </form> 
+            </aside>
+            <div class="right-column">
+                <div class="catalog-sort">
+                    <span class="catalog-sort-title">Сортировать:</span>
+                    <a href="#" class="catalog-sort-option">По цене</a>
+                    <a href="#" class="catalog-sort-option catalog-sort-option-active">По типу</a>
+                    <a href="#" class="catalog-sort-option">по функционалу</a>
+                    <div class="catalog-arrow-block">
+                    <a href="#" class="catalog-arrow-down catalog-arrow-active"></a>
+                    <a href="#" class="catalog-arrow-up"></a>
+                    </div>
+                </div>
+                <div class="catalog-products clearfix">
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                        <img src="img/catalog-img-aviator.jpg" alt="Aviator" width="240" height="240">
+                        </figure>
+                        <div class="catalog-item-infoblock">
+                            <h3 class="catalog-item-title">Aviator</h3>
+                            <p class="catalog-item-info">Одностраничный макет с авторским дизайном</p>
+                            <span class="btn catalog-item-btn">8000 P.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                        <img src="img/catalog-img-desert.jpg" alt="Sunset" width="240" height="240">
+                        </figure>
+                        <div class="catalog-item-infoblock">
+                            <h3 class="catalog-item-title">Sunset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 P.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                        <img src="img/catalog-img-forte.jpg" alt="Forte" width="240" height="240">
+                        </figure>
+                        <div class="catalog-item-infoblock">
+                            <h3 class="catalog-item-title">Forte</h3>
+                            <p class="catalog-item-info">Отличный макет для личного блога</p>
+                            <span class="btn catalog-item-btn">5000 P.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                        <img src="img/catalog-img-thai.jpg" alt="Modern organic thai" width="240" height="240">
+                        </figure>
+                        <div class="catalog-item-infoblock">
+                            <h3 class="catalog-item-title">Modern organic thai</h3>
+                            <p class="catalog-item-info">Сайт для ресторана быстрого питания</p>
+                            <span class="btn catalog-item-btn">12000 P.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                        <img src="img/catalog-img-avenue.jpg" alt="Avenue" width="240" height="240">
+                        </figure>
+                        <div class="catalog-item-infoblock">
+                            <h3 class="catalog-item-title">Avenue</h3>
+                            <p class="catalog-item-info">Макет для блога о путешествиях</p>
+                            <span class="btn catalog-item-btn">8000 P.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                        <img src="img/catalog-img-dovetail.jpg" alt="Dovetail" width="240" height="240"></figure>
+                        <div class="catalog-item-infoblock">
+                            <h3 class="catalog-item-title">Dovetail</h3>
+                            <p class="catalog-item-info">Интернет-магазин с галереей товаров</p>
+                            <span class="btn catalog-item-btn">14000 P.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="catalog-products-navigation">
+                    <span class="catalog-navigation-active">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="catalog-navigation-next">Следующая</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-		<main class="container clearfix">
-			<div class="sidebar">
-				<div class="value"></div>
-				<div class="grid"></div>
-				<div class="features"></div>
-			</div>
-			<div class="layout-choose"></div>
-		</main>
-
-	 <footer>
+    <footer>
         <div class="map">
-            <div class="map-script"></div>
-            <div class="container">
+            <div class="map-script">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.6552122680664!2d30.48975492793876!3d50.52198183210373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d2414f4cf2a1%3A0x58414ae2ff30d0a4!2z0JPQtdGA0L7Rl9CyINCU0L3RltC_0YDQsA!5e0!3m2!1suk!2sua!4v1486737116099" width="1360" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="container clearfix">
+                <div class="hidden"></div>
                 <div class="map-block">
                     <h3 class="map-block-title">Nerds design studio</h3>
-                    <p class="map-block-info">350000, Краснодар, ул. Головатого, 100</p>
+                    <p class="map-block-info">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
                     <p class="map-block-info">тел. +7 (861) 275-75-75</p>
                     <a href="feedback.html" class="btn map-btn">Напишите нам</a>
                 </div>
@@ -68,37 +168,33 @@
             </section>
         </div>
     </footer>
-
-    <!--
-    <div class="feedback">
-        <form action="/feedback" method="post">
-            <div class="feedback-user clearfix">
+    <div class="pop-up">
+        <button class="pop-up-close" type="button" title="Закрить">Закрить</button>
+        <form action="#" class="feedback-form" method="post">
+            <div class="pop-up-wrap clearfix">
                 <div class="feedback-left-column">
-                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
-                    <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
+                    <label for="login-form">Ваше имя</label>
+                    <input  type="text" name="login" class="login-form" id="login-form" placeholder="Представьтесь, пожалуйста">
                 </div>
                 <div class="feedback-right-column">
-                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
-                    <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+                    <label for="email-form">Ваш e-mail</label>
+                    <input name="email" type="email" class="email-form" id="email-form" placeholder="Для отправки ответа">
                 </div>
             </div>
-            <label class="feedback-data" for="feedback-textarea">Текст письма:</label>
-            <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
-
-            <div class="feedback-block clearfix">
-                <button type="submit" class="btn feedback-btn">Отправить</button>
-                <a class="btn feedback-cancel" href="#">Омена</a>
-            </div>
-            <a href="#" class="feedback-circle-btn"></a>
+            <label for="feedback-textarea">Текст письма</label>
+            <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" rows="5"></textarea>
+            <button type="submit" class="btn btn-feedback">Отправить</button>
         </form>
     </div>
-    -->
+    
+    
 
 
-0
+    <script src="js/script.js"></script>
+
+    
 
 
-</body>
-</html>
+
 </body>
 </html>
