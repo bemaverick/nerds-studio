@@ -19,6 +19,7 @@ body {
 .main-header {
 	background-color: #eee;
 	padding: 0;
+    min-width: 900px;
 	
 }
 
