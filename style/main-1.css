@@ -19,7 +19,7 @@ body {
 .main-header {
 	background-color: #eee;
 	padding: 0;
-    min-width: 900px;
+	min-width: 900px;
 	
 }
 
@@ -1196,6 +1196,9 @@ label[for="feedback-textarea"] {
 	padding: 0;
 }
 .catalog-item-btn {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28px;
 	width: 140px;
 	background-color: #fb565a;
 	font-size: 18px;
@@ -1214,16 +1217,24 @@ label[for="feedback-textarea"] {
 .catalog-item-infoblock {
 	opacity: 0;
 	display: block;
-	width: 140px;
+	width: 160px;
+    padding: 30px 20px;
 	height: 140px;
 	background-color: #fff;
 	position: absolute;
 	z-index: 100;
 	bottom: 20px;
 	left: 20px;
-	padding: 30px;
 	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.6);
 }
+.special-infoblock .catalog-item-btn {
+	margin-top: 10px;
+}
+.special-infoblock .catalog-item-title {
+	margin-bottom: 0;
+}
+
+
 .catalog-item:hover > .catalog-item-infoblock {
 	opacity: 1;
 	transition: opacity .6s;
